@@ -1,0 +1,44 @@
+{
+  "name": "leaflet.spike",
+  "version": "0.0.1",
+  "description": "A tiny and fast Leaflet spikes plugin.",
+  "homepage": "https://github.com/artemeff/Leaflet.spike",
+  "keywords": [
+    "spike",
+    "canvas",
+    "visualization",
+    "gis",
+    "leaflet",
+    "plugin"
+  ],
+  "author": "Yuri Artemev",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/artemeff/Leaflet.spike.git"
+  },
+  "main": "dist/leaflet-spike.js",
+  "devDependencies": {
+    "uglify-js": "~2.4.12"
+  },
+  "scripts": {
+    "test": "jshint src",
+    "prepublish": "uglifyjs src/Spike.js src/SpikeLayer.js -c -m -o dist/leaflet-spike.js"
+  },
+  "jshintConfig": {
+    "quotmark": "single",
+    "globals": {
+      "L": true,
+      "simpleheat": true
+    },
+    "trailing": true,
+    "camelcase": true,
+    "curly": true,
+    "eqeqeq": true,
+    "noempty": true,
+    "nonbsp": true,
+    "undef": true,
+    "unused": true,
+    "browser": true,
+    "trailing": true
+  }
+}
