@@ -1,7 +1,3 @@
-/*
- * L.Icon is an image-based icon class that you can use with L.Marker for custom markers.
- */
-
 L.Spike = L.Class.extend({
   options: {
     maxHeight: 50,

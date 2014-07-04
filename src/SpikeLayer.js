@@ -1,7 +1,3 @@
-/*
- * L.Marker is used to display clickable icons on the map.
- */
-
 L.SpikeLayer = L.Class.extend({
   options: {
     // maxValue: 0,
