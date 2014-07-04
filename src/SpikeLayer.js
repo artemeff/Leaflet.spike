@@ -25,12 +25,10 @@ L.SpikeLayer = L.Class.extend({
 
   addLatLng: function(latlng) {
     this._latlng.push(latlng);
-    return this.update();
   },
 
   setLatLngs: function(latlng) {
     this._latlng = latlng;
-    return this.update();
   },
 
   addTo: function(map) {
